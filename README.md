@@ -5,12 +5,7 @@ When you wear a red/orange cloth, the program replaces it with the captured back
 
 ---
 
-## 🎥 Demo
-<p align="center">
-  <img src="demo.gif" width="500"/>
-</p>
 
----
 
 ## ⚙️ Features
 - Capture a clean background once (`background.py`)
