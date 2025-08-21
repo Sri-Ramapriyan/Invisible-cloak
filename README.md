@@ -4,6 +4,10 @@ A fun computer vision project that creates a **real-life invisible cloak effect*
 When you wear a red/orange cloth, the program replaces it with the captured background — making you look invisible!
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b42902a91922ac7db4a052e7b47aa035a683a77a
 
 ## ⚙️ Features
 - Capture a clean background once (`background.py`)
