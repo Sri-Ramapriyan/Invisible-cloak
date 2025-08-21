@@ -3,14 +3,7 @@
 A fun computer vision project that creates a **real-life invisible cloak effect** using Python and OpenCV.  
 When you wear a red/orange cloth, the program replaces it with the captured background — making you look invisible!
 
----
 
-## 🎥 Demo
-<p align="center">
-  <img src="demo.gif" width="500"/>
-</p>
-
----
 
 ## ⚙️ Features
 - Capture a clean background once (`background.py`)
@@ -27,6 +20,6 @@ When you wear a red/orange cloth, the program replaces it with the captured back
 - OpenCV (`opencv-python`)
 - NumPy
 
-Install with:
+Install with
 ```bash
 pip install opencv-python numpy
