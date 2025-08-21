@@ -1,4 +1,3 @@
-# invisible_cloak.py
 """
 Invisible Cloak (Red) using OpenCV.
 - Requires background.jpg produced by background.py in the same folder.
@@ -40,20 +39,19 @@ def build_red_mask(hsv):
     upper_red2 = np.array([180, 255, 255])
 
     # Reddish-orange range
-    lower_orange = np.array([10, 100, 70])
-    upper_orange = np.array([25, 255, 255])
+    
 
     mask1 = cv2.inRange(hsv, lower_red1, upper_red1)
     mask2 = cv2.inRange(hsv, lower_red2, upper_red2)
-    mask3 = cv2.inRange(hsv, lower_orange, upper_orange)
+    
 
     # Combine masks
-    mask = mask1 | mask2 | mask3
+    mask = mask1 | mask2 
 
     # Clean mask
     kernel = np.ones((3, 3), np.uint8)
-    mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=2)
-    mask = cv2.dilate(mask, kernel, iterations=1)
+    mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=10)
+    mask = cv2.dilate(mask, kernel, iterations=10)
 
     return mask
 
